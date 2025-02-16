@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "b6b0c859-505a-43ef-80e4-300ca55c898c",
+		"name": "Spring AI Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20359319"
+	},
+	"item": [
+		{
+			"name": "AskAI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ask-ai?prompt=whats%20up?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ask-ai"
+					],
+					"query": [
+						{
+							"key": "prompt",
+							"value": "whats%20up?"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AskAI Options",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ask-ai-options?prompt=are you human?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ask-ai-options"
+					],
+					"query": [
+						{
+							"key": "prompt",
+							"value": "are you human?"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate Image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/generate-image?prompt=cute cat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"generate-image"
+					],
+					"query": [
+						{
+							"key": "prompt",
+							"value": "cute cat"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate Image Options",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/generate-image-options?prompt=clash of clan scenery wallpaper&quality=hd&n=1&height=1024&width=1024",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"generate-image-options"
+					],
+					"query": [
+						{
+							"key": "prompt",
+							"value": "clash of clan scenery wallpaper"
+						},
+						{
+							"key": "quality",
+							"value": "hd"
+						},
+						{
+							"key": "n",
+							"value": "1"
+						},
+						{
+							"key": "height",
+							"value": "1024"
+						},
+						{
+							"key": "width",
+							"value": "1024"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Recipe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/create-recipe?ingredients=egg, tomato, onions, potato&cuisine=indian&dietaryRestriction=nothing",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"create-recipe"
+					],
+					"query": [
+						{
+							"key": "ingredients",
+							"value": "egg, tomato, onions, potato"
+						},
+						{
+							"key": "cuisine",
+							"value": "indian"
+						},
+						{
+							"key": "dietaryRestriction",
+							"value": "nothing"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

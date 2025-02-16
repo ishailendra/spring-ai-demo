@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "a4b66ae1-5714-4177-88b1-0734eaab5ac8",
+		"name": "Spring AI Audio Transcribe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20359319"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/ssing/Downloads/ttsMP3.com_VoiceText_2025-2-16_17-19-45.mp3"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/transcribe?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"transcribe"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
